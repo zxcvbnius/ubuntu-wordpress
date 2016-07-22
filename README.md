@@ -17,7 +17,12 @@ In defaults/main.yml, you have to put your database name and mysql account and p
 Dependencies
 ------------
 
-none
+You have to install MySQL + Apache + PHP packages first.
+You can use the following ansible scripts to help you install these packages: 
+
+ - [zxcvbnius.ubuntu-server](https://galaxy.ansible.com/zxcvbnius/ubuntu-server/)
+ - [zxcvbnius.ubuntu-php](https://galaxy.ansible.com/zxcvbnius/ubuntu-php/)
+ - [zxcvbnius.ubuntu-mysql](https://galaxy.ansible.com/zxcvbnius/ubuntu-mysql/)
 
 
 Example Playbook
