@@ -29,8 +29,16 @@ Example Playbook
 ----------------
 
     - hosts: servers
+	  # if you use `zxcvbnius.ubuntu-mysql`, you have to modify these variables
+	  vars:
+        wp_mysql_db: your_wp_db
+        wp_mysql_user: your_mysql_user
+        wp_mysql_password: your_mysql_pwd
       roles:
-         - wordpress
+         - zxcvbnius.ubuntu-server
+         - zxcvbnius.ubuntu-php
+         - zxcvbnius.ubuntu-mysql
+         - zxcvbnius.ubuntu-wordpress
 
 License
 -------
